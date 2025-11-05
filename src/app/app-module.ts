@@ -8,8 +8,8 @@ import { DeportesComponent } from '../components/deportes/deportes.component';
 import { DeportesV2Component } from '../components/deportesv2/deportesv2.component';
 import { FormsBinding } from '../components/formsbinding/formsbinding.component';
 import { SumarNumerosComponent } from '../components/sumarnumeros/sumarnumeros.component';
-import { Prueba } from './components/prueba/prueba';
-import { Prueba2Component } from './components/prueba2.component/prueba2.component';
+import { TestComponent } from '../components/test.component/test.component';
+import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { Prueba2Component } from './components/prueba2.component/prueba2.compone
     DeportesV2Component,
     FormsBinding,
     SumarNumerosComponent,
-    Prueba,
-    Prueba2Component
+    TestComponent,
+    TablamultiplicarComponent
   ],
   imports: [
     BrowserModule,FormsModule

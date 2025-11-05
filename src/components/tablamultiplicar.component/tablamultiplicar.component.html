@@ -1,0 +1,19 @@
+<div>
+    <h1>Tabla multiplicar</h1>
+    <form #formtabla="ngForm">
+        <label>Numero</label>
+        <input type="number" name="cajanumero" #cajanumero />
+        <button type="button" (click)="agregarTabla()">Generar Tabla</button>
+    </form>
+    <h2 *ngIf="numero">Tabla de multiplicar del: {{numero}}</h2>
+    <ul>
+        <li *ngFor="let num of tabla; let i = index">
+            {{numero}} x {{i+1}} = {{num}}
+        </li>
+    </ul>
+    <ul>
+        @for(num of tabla;track num;let i=$index){
+            <li>{{numero}} x {{i+1}} = {{num}}</li>
+        }
+    </ul>
+</div>
