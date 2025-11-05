@@ -1,3 +1,11 @@
 <div>
-    <h1 style="color: blue;">Directivas 2025</h1>
+    <h1 style="color: blue;">@Directivas 2025</h1>
+    <ul>
+        @for(sport of sports;track sport;let i=$index){
+            <li>Index {{i}}: {{sport}}</li>
+        }@empty{
+            <li>Sin elementos</li>
+        }
+    </ul>
+     
 </div>
