@@ -1,19 +1,41 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, DoCheck } from "@angular/core";
+
 @Component({
 
-selector: 'hooks-angular',
-standalone: false,  
-templateUrl:"./hooksangular.component.html"
+    selector: "hooks-angular",
+
+    standalone: false,
+    templateUrl: "./hooksangular.component.html"
+
 })
 
-export class HooksAngularComponent implements OnInit{
-constructor(){
-    console.log("constructor: primer metodo de inicio de component")
-}
-ngOnInit(): void {
-    console.log("Soy OnInit,despues de constructor!!!!");
-}
-ngDoCheck():void{
-    console.log("NgCheck cambiadno algo en Render!!!");
-}
-}
+export class HooksAngular implements OnInit {
+
+    public mensaje: string;
+
+    constructor() {
+
+        console.log("Constructor: Primer método de inicio de Component")
+
+        this.mensaje = "Hoy es miércoles";
+
+    }
+
+    cambiarMensaje(): void {
+
+        this.mensaje = "y mañana juernes!!!!";
+
+    }
+
+    ngOnInit(): void {
+
+        console.log("Soy OnInit, después de constructor!!!!");
+    }
+
+    ngDoCheck(): void {
+
+        console.log("NgCheck cambiando algo en Render!!!");
+
+    }
+
+} 
